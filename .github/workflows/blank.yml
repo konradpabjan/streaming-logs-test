@@ -37,7 +37,7 @@ jobs:
         echo "starting to sleep again"
         sleep 70
         echo "starting loop"
-        for i in {1..10000}
+        for i in {1..2000}
         do
            echo "Hi $i"
            sleep 0.02
