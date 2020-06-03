@@ -21,6 +21,16 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    
+    - name: Some other Test
+      run: echo "hello world!"
+    
+    - name: Some other Test again
+      run: echo "hello world!"
 
     - name: Test streaming some things
       run: |
@@ -32,3 +42,6 @@ jobs:
            echo "Can I get a consistent repo for logs sometimes not being un-expandable when a page gets refreshed?"
            echo "Pretty please?"
         done
+    
+    - name: Last
+      run: echo "hello world for the last time"
