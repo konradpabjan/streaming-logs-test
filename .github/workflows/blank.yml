@@ -35,7 +35,7 @@ jobs:
     - name: Test streaming some things
       run: |
         echo "starting to sleep again"
-        sleep 70
+        sleep 25
         echo "starting loop"
         for i in {1..2000}
         do
@@ -46,7 +46,7 @@ jobs:
            echo "Pretty please?"      
         done
         echo "finished with loop"
-        sleep 70
+        sleep 25
         echo "Again"
     
     - name: Last
