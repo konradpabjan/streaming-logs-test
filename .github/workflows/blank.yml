@@ -34,14 +34,20 @@ jobs:
 
     - name: Test streaming some things
       run: |
+        echo "starting to sleep again"
+        sleep 70
+        echo "starting loop"
         for i in {1..10000}
         do
            echo "Hi $i"
            sleep 0.02
            echo "Done sleeping for $i. We are going to have a lot of text here so that even more logs will be streamed. This is going to be just for testing"
            echo "Can I get a consistent repo for logs sometimes not being un-expandable when a page gets refreshed?"
-           echo "Pretty please?"
+           echo "Pretty please?"      
         done
+        echo "finished with loop"
+        sleep 70
+        echo "Again"
     
     - name: Last
       run: echo "hello world for the last time"
