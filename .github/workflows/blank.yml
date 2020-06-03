@@ -24,9 +24,9 @@ jobs:
 
     - name: Test streaming some things
       run: |
-        for i in {1..100}
+        for i in {1..10000}
         do
            echo "Hi $i"
-           sleep 1.5
+           sleep 0.2
            echo "Done sleeping for $i"
         done
