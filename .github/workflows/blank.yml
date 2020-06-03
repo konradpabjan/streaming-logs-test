@@ -27,6 +27,8 @@ jobs:
         for i in {1..10000}
         do
            echo "Hi $i"
-           sleep 0.2
-           echo "Done sleeping for $i"
+           sleep 0.02
+           echo "Done sleeping for $i. We are going to have a lot of text here so that even more logs will be streamed. This is going to be just for testing"
+           echo "Can I get a consistent repo for logs sometimes not being un-expandable when a page gets refreshed?"
+           echo "Pretty please?"
         done
