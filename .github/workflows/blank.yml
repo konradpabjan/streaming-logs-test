@@ -38,4 +38,4 @@ jobs:
         sleep 20
         echo "We are done sleeping, this should be outputted!"
     - name: Last
-      run: echo "This is some output in another step, that is recieved, but you don't see it?"
+      run: echo "Some output in another step"
