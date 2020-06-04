@@ -26,16 +26,32 @@ jobs:
       with:
         python-version: 3.7
     
-    - name: Some other Test
+    - name: Some step output
       run: echo "hello world!"
     
-    - name: Some other Test again
-      run: echo "hello world!"
+    - name: Some other step output
+      run: echo "hello world again!"
 
-    - name: Sleep for a long time
+    - name: Test streaming some more complex things
       run: |
-        echo "starting sleep When you see this refresh the page and inspect the websocket that is being used for streaming logs"
+        echo "First output"
         sleep 20
-        echo "We are done sleeping, this should be outputted!"
-    - name: Last
-      run: echo "Some output in another step"
+        echo "starting loop"
+        for i in {1..300}
+        do
+           echo "Hi $i"
+           sleep 0.02
+           echo "Done sleeping for $i"
+        done
+        echo "finished with loop 1"
+        sleep 20
+        echo "starting loop 2"
+        for i in {1..300}
+        do
+           echo "Hi $i"
+           sleep 0.02
+           echo "Done sleeping for $i"
+        done
+        echo "finished with loop 2"
+        sleep 20
+        echo "We are done!"
