@@ -32,35 +32,10 @@ jobs:
     - name: Some other Test again
       run: echo "hello world!"
 
-    - name: Test streaming some things
+    - name: Sleep for a long time
       run: |
-        echo "starting to sleep again"
-        echo "::warning::Some warning at the start"
+        echo "starting sleep When you see this refresh the page and inspect the websocket that is being used for streaming logs"
         sleep 20
-        echo "starting loop"
-        for i in {1..300}
-        do
-           echo "Hi $i"
-           sleep 0.02
-           echo "Done sleeping for $i"
-           echo "Can I get a consistent repo for logs sometimes not being un-expandable when a page gets refreshed?"
-           echo "Pretty please?"      
-        done
-        echo "finished with loop 1"
-        sleep 20
-        echo "starting loop 2"
-        for i in {1..300}
-        do
-           echo "Hi $i"
-           sleep 0.02
-           echo "Done sleeping for $i"
-           echo "Can I get a consistent repo for logs sometimes not being un-expandable when a page gets refreshed?"
-           echo "Pretty please?"      
-        done
-        echo "finished with loop 2"
-        sleep 20
-        echo "We are done!"
-        echo "::warning::Some warning"
-    
+        echo "We are done sleeping, this should be outputted!"
     - name: Last
-      run: echo "hello world for the last time"
+      run: echo "This is some output in another step, that is recieved, but you don't see it?"
