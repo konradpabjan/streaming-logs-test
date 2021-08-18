@@ -35,22 +35,22 @@ jobs:
 
     - name: Test streaming some more complex things
       run: |
-        echo "First output"
-        sleep 20
+        echo "First output sleepiong for 5 seconds"
+        sleep 5
         echo "starting loop"
         for i in {1..300}
         do
            echo "Hi $i"
-           sleep 0.02
+           sleep 2
            echo "Done sleeping for $i"
         done
-        echo "finished with loop 1"
-        sleep 20
+        echo "finished with loop 1 sleeping for 5 seconds"
+        sleep 5
         echo "starting loop 2"
         for i in {1..300}
         do
            echo "Hi $i"
-           sleep 0.02
+           sleep 2
            echo "Done sleeping for $i"
         done
         echo "finished with loop 2"
