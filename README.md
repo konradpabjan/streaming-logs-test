@@ -1,1 +1,3 @@
 # streaming-logs-test
+
+test
