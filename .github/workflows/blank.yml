@@ -26,11 +26,60 @@ jobs:
       with:
         python-version: 3.7
     
-    - name: Some step output
-      run: echo "hello world!"
+    - name: Test streaming some more complex things
+      run: |
+        echo "First output sleepiong for 5 seconds"
+        sleep 3
+        echo "starting loop"
+        for i in {1..20}
+        do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
+           echo "Done sleeping for $i"
+        done
     
-    - name: Some other step output
-      run: echo "hello world again!"
+    - name: Test streaming some more complex things
+      run: |
+        echo "First output sleepiong for 5 seconds"
+        sleep 3
+        echo "starting loop"
+        for i in {1..20}
+        do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
+           echo "Done sleeping for $i"
+        done
+        
+        echo "First output sleepiong for 5 seconds"
+        sleep 3
+        echo "starting loop"
+        for i in {1..20}
+        do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
+           echo "Done sleeping for $i"
+        done
 
     - name: Test streaming some more complex things
       run: |
