@@ -80,14 +80,55 @@ jobs:
            sleep 1
            echo "Done sleeping for $i"
         done
+        
+    - name: Test streaming some more complex things
+      run: |
+        echo "First output sleepiong for 5 seconds"
+        sleep 3
+        echo "starting loop"
+        for i in {1..20}
+        do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
+           echo "Done sleeping for $i"
+        done
+        
+        echo "First output sleepiong for 5 seconds"
+        sleep 3
+        echo "starting loop"
+        for i in {1..20}
+        do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
+           echo "Done sleeping for $i"
+        done
+
 
     - name: Test streaming some more complex things
       run: |
         echo "First output sleepiong for 5 seconds"
-        sleep 5
+        sleep 3
         echo "starting loop"
-        for i in {1..300}
+        for i in {1..20}
         do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
            echo "Hi $i"
            echo "Hi $i"
            echo "Hi $i"
@@ -95,11 +136,16 @@ jobs:
            sleep 1
            echo "Done sleeping for $i"
         done
-        echo "finished with loop 1 sleeping for 5 seconds"
-        sleep 5
-        echo "starting loop 2"
-        for i in {1..300}
+        
+        echo "First output sleepiong for 5 seconds"
+        sleep 3
+        echo "starting loop"
+        for i in {1..20}
         do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
            echo "Hi $i"
            echo "Hi $i"
            echo "Hi $i"
@@ -107,6 +153,40 @@ jobs:
            sleep 1
            echo "Done sleeping for $i"
         done
-        echo "finished with loop 2"
-        sleep 20
-        echo "We are done!"
+
+    - name: Test streaming some more complex things
+      run: |
+        echo "First output sleepiong for 5 seconds"
+        sleep 3
+        echo "starting loop"
+        for i in {1..20}
+        do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
+           echo "Done sleeping for $i"
+        done
+        
+        echo "First output sleepiong for 5 seconds"
+        sleep 3
+        echo "starting loop"
+        for i in {1..20}
+        do
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
+           echo "Done sleeping for $i"
+        done
+
