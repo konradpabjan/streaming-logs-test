@@ -40,7 +40,10 @@ jobs:
         for i in {1..300}
         do
            echo "Hi $i"
-           sleep 2
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
            echo "Done sleeping for $i"
         done
         echo "finished with loop 1 sleeping for 5 seconds"
@@ -49,7 +52,10 @@ jobs:
         for i in {1..300}
         do
            echo "Hi $i"
-           sleep 2
+           echo "Hi $i"
+           echo "Hi $i"
+           echo "Hi $i"
+           sleep 1
            echo "Done sleeping for $i"
         done
         echo "finished with loop 2"
