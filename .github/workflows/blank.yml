@@ -31,7 +31,7 @@ jobs:
         echo "First output sleepiong for 5 seconds"
         sleep 3
         echo "starting loop"
-        for i in {1..20}
+        for i in {1..50}
         do
            echo "Hi $i"
            echo "Hi $i"
@@ -50,7 +50,7 @@ jobs:
         echo "First output sleepiong for 5 seconds"
         sleep 3
         echo "starting loop"
-        for i in {1..20}
+        for i in {1..50}
         do
            echo "Hi $i"
            echo "Hi $i"
@@ -67,7 +67,7 @@ jobs:
         echo "First output sleepiong for 5 seconds"
         sleep 3
         echo "starting loop"
-        for i in {1..20}
+        for i in {1..50}
         do
            echo "Hi $i"
            echo "Hi $i"
