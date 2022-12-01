@@ -25,3 +25,21 @@ jobs:
           do
             echo i
           done
+          echo "Done with crazy loop"
+          sleep 3
+          echo "starting loop"
+          for i in {1..50}
+          do
+             echo "Hi $i"
+             echo "Hi $i"
+             echo "Hi $i"
+             echo "Hi $i"
+             echo "Hi $i"
+             echo "Hi $i"
+             echo "Hi $i"
+             echo "Hi $i"
+             sleep 1
+             echo "Done sleeping for $i"
+          done
+
+          
